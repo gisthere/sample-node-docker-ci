@@ -14,4 +14,7 @@ deployment:
   production:
     branch: master
     commands:
-      - echo "fdfds"
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - chmod u+x deploy.sh
+      - ./deploy.sh
+
