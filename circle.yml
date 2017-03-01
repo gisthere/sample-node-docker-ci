@@ -9,10 +9,3 @@ dependencies:
 test:
   override:
     - docker run gisthere/sample-node npm test
-
-deployment:
-  production:
-    branch: master
-    commands:		
-      - echo "fsdfsdf"
-
