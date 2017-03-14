@@ -2,7 +2,7 @@
 docker build -t gisthere/sample-node .
 docker push gisthere/sample-node
 
-ssh gisthere@104.199.32.244 << EOF
+ssh gisthere@104.155.39.128 << EOF
 docker pull gisthere/sample-node:latest
 docker stop web || true
 docker rm web || true
